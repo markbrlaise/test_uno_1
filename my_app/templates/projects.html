@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>nadjibm.com</title>
+    <!--===== render all elements normally =====-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/normalise.css') }}"/>
+    <!--===== font awesome library =====-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/all.min.css') }}"/>
+    <!--===== main template css file =====-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}"/>
+    <!--===== google font =====-->
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+</head>
+
+<body>
+    <!-- start header -->
+    <header class="sub-header">
+        <div class="container">
+            <nav>
+                <a href="{{ url_for('index') }}"><p>Nadjib <span>M</span></p></a>
+                <div class="links" id="navLinks">
+                    <i class="fas fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="{{ url_for('index') }}">HOME</a></li>
+                        <li><a href="{{ url_for('about') }}">ABOUT</a></li>
+                        <li><a href="{{ url_for('skills') }}">SKILLS</a></li>
+                        <li><a href="{{ url_for('projects') }}">PROJECTS</a></li>
+                        <li><a href="{{ url_for('contact') }}">CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fas fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <div class="text-box blog-text">
+                <h1>My Projects</h1>
+            </div>
+        </div>
+    </header>
+    <!-- end header -->
+    
+    <!-- start my project -->
+    <section class="projects">
+        <div class="container">
+            <h1>My Projects</h1>
+            <p>These are three of my projects, and all my projects on <a href="https://github.com/Nadjib-coder?tab=repositories">My GitHub</a></p>
+            <div class="row">
+                <div class="projects-col">
+                    <a href="https://nadjib-coder.github.io/front-end-mentor-challenge-11/">
+                    <div class="img">
+                        <img src="../static/images/project1.png" alt="London"/>
+                    </div>
+                    <div class="layer">
+                        <h3>Clipboard<br>Click here!</h3>
+                    </div>
+                    </a>
+                </div>
+                <div class="projects-col">
+                    <a href="https://nadjib-coder.github.io/front-end-mentor-challenge-12/">
+                    <div class="img">
+                        
+                            <img src="../static/images/project 2.png" alt="newyork"/>
+                        
+                    </div>
+                    <div class="layer">
+                        <h3>Huddle<br>Click here!</h3>
+                    </div>
+                    </a>
+                </div>
+                <div class="projects-col">
+                    <a href="https://nadjib-coder.github.io/front-end-mentor-challenge-13/">
+                        <div class="img">
+                                <img src="../static/images/project3.png" alt="washington"/>
+                        </div>
+                        <div class="layer">
+                            <h3 class="h3">Flyo<br>Click here !</h3>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end my project -->
+
+    
+    <!-- start contact -->
+    <section class="contact">
+        <div class="container">
+            <div class="content">
+                <h1>You have a new project</h1>
+                <p>Contact me now and get a 30% discount on your new project</p>
+                <a href="{{ur for('contact') }}" class="btn">CONTACT US</a>
+            </div>
+        </div>
+    </section>
+    <!-- end contact -->
+
+    <!--start blog content-->
+    <section class="leave_a_comment-content">
+        <div class="container">
+            <section class="content">
+                
+                <form>
+                    <h3>Leave a comment</h3>
+                    <input type="text" value="" placeholder="Enter Name">
+                    <input type="email" value="" placeholder="Enter email">
+                    <textarea placeholder="Your Comment"></textarea>
+                    <input class="btn" type="submit" name="submit" value="POST COMMENT">
+                </form>
+            </section>
+        </div>  
+    </section>
+    <!--end blog content-->
+
+    <div class="clearfix"></div>
+
+    <!-- start footer -->
+    <footer class="about-us">
+        <div class="container">
+            <h4>About Me</h4>
+            <p>Hight level experience in web design and development knowledge, producing quality Work.</p>
+            <a href="https://www.facebook.com/NadjibM/"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com/nadjib_m1"></a><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/nadjibm_/"></a><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/nadjib-mouhoun-1725a7212/"></a><i class="fab fa-linkedin-in"></i></a>
+            <p>made with <i class="far fa-heart"></i> by Nadjib M</p>
+        </div>
+    </footer>
+    <!-- end about us -->
+
+
+    <!-- main js -->
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>

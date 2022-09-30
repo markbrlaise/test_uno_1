@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>nadjibm.com</title>
+    <!--===== render all elements normally =====-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/normalise.css') }}"/>
+    <!--===== font awesome library =====-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/all.min.css') }}"/>
+    <!--===== main template css file =====-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}"/>
+    <!--===== google font =====-->
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+</head>
+<body>
+    <!--===== start header =====-->
+    <header>
+        <div class="container">
+            <nav>
+                <a href="{{ url_for('index') }}"><p>Nadjib <span>M</span></p></a>
+                <div class="links" id="navLinks">
+                    <i class="fas fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="{{ url_for('index') }}">HOME</a></li>
+                        <li><a href="{{ url_for('about') }}">ABOUT</a></li>
+                        <li><a href="{{ url_for('skills') }}">SKILLS</a></li>
+                        <li><a href="{{ url_for('projects') }}">PROJECTS</a></li>
+                        <li><a href="{{ url_for('contact') }}">CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fas fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <section class="text-box">
+                <h1>Hello There!</h1>
+                <p>I'm Nadjib,<br>Front end Developer. </p>
+                <a href="{{ url for('about') }}" class="btn">Visit Me To Know More</a>
+            </section>
+        </div>
+    </header>
+    <!--===== end header =====-->
+
+
+    <!--===== main js =====-->
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>

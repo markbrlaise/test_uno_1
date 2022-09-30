@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>nadjibm.com</title>
+    <!--===== render all elements normally =====-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/normalise.css') }}"/>
+    <!--===== font awesome library =====-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/all.min.css') }}"/>
+    <!--===== main template css file =====-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}"/>
+    <!--===== google font =====-->
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+</head>
+<body>
+    <!--===== start header =====-->
+    <header>
+        <div class="container">
+            <nav>
+                <a href="{{ url_for('index') }}"><p>Nadjib <span>M</span></p></a>
+                <div class="links" id="navLinks">
+                    <i class="fas fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="{{ url_for('index') }}">HOME</a></li>
+                        <li><a href="{{ url_for('about') }}">ABOUT</a></li>
+                        <li><a href="{{ url_for('skills') }}">SKILLS</a></li>
+                        <li><a href="{{ url_for('projects') }}">PROJECTS</a></li>
+                        <li><a href="{{ url_for('contact') }}">CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fas fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <section class="text-box">
+                <h1>My Skills</h1>
+        </div>
+    </header>
+    <!-- end header -->
+
+    <!-- start skills -->
+    <section class="skills">
+        <div class="container">
+            <h1>My Skills</h1>
+            <p>I'm frontend developer well versed with Html, CSS, Javascript.<br> I'm well conversant with modern frameworks such as React js, bootstrap...</p>
+            <div class="row">
+                <div class="feat">
+                    <h3>Html</h3>
+                    <p>HyperText Markup Language, commonly abbreviated HTML or, in its latest version, HTML5, is the markup language designed to represent web pages.</p>
+                </div>
+                <div class="feat">
+                    <h3>CSS</h3>
+                    <p>Cascading Style Sheets,is a computer language that describes the presentation of HTML and XML documents. was becoming commonly used in web design.</p>
+                </div>
+                <div class="feat">
+                    <h3>Javascript</h3>
+                    <p>is a scripting programming language mainly used in interactive web pages and as such is an essential part of web applicationsr.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end skills -->
+
+    
+
+    <!-- start footer -->
+    <footer class="about-us">
+        <div class="container">
+            <h4>About Me</h4>
+            <p>Hight level experience in web design and development knowledge, producing quality Work.</p>
+            <a href="https://www.facebook.com/NadjibM/"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com/nadjib_m1"></a><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/nadjibm_/"></a><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/nadjib-mouhoun-1725a7212/"></a><i class="fab fa-linkedin-in"></i></a>
+            <p>made with <i class="far fa-heart"></i> by Nadjib M</p>
+        </div>
+    </footer>
+    <!-- end about us -->
+
+
+
+
+    <!-- main js -->
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
