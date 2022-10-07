@@ -4,13 +4,13 @@
     <meta charset="UTF-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>nadjibm.com</title>
+    <title>NadjibM.com</title>
     <!--===== render all elements normally =====-->
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/normalise.css') }}"/>
+    <link rel="stylesheet" href="../static/css/normalise.css"/>
     <!--===== font awesome library =====-->
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/all.min.css') }}"/>
+    <link rel="stylesheet" href="../static/css/all.min.css"/>
     <!--===== main template css file =====-->
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}"/>
+    <link rel="stylesheet" href="../static/css/main.css"/>
     <!--===== google font =====-->
     <link rel="preconnect" href="https://fonts.googleapis.com"/>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
@@ -21,23 +21,23 @@
     <header>
         <div class="container">
             <nav>
-                <a href="{{ url_for('index') }}"><p>Nadjib <span>M</span></p></a>
+                <a href="index.html"><p>Nadjib <span>M</span></p></a>
                 <div class="links" id="navLinks">
                     <i class="fas fa-times" onclick="hideMenu()"></i>
                     <ul>
-                        <li><a href="{{ url_for('index') }}">HOME</a></li>
-                        <li><a href="{{ url_for('about') }}">ABOUT</a></li>
-                        <li><a href="{{ url_for('skills') }}">SKILLS</a></li>
-                        <li><a href="{{ url_for('projects') }}">PROJECTS</a></li>
-                        <li><a href="{{ url_for('contact') }}">CONTACT</a></li>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="skills.html">SKILLS</a></li>
+                        <li><a href="projects.html">PROJECTS</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
                     </ul>
                 </div>
                 <i class="fas fa-bars" onclick="showMenu()"></i>
             </nav>
             <section class="text-box">
                 <h1>Hello There!</h1>
-                <p>I'm Nadjib,<br>Front end Developer. </p>
-                <a href="{{ url_for('about') }}" class="btn">Visit Me To Know More</a>
+                <p>I'm Nadjib,<br>Frontend Developer & Automation Technician.</p>
+                <a href="about.html" class="btn">Visit Me To Know More</a>
             </section>
         </div>
     </header>
@@ -45,6 +45,6 @@
 
 
     <!--===== main js =====-->
-    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+    <script src="../static/js/main.js"></script>
 </body>
 </html>

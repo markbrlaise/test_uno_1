@@ -4,13 +4,13 @@
     <meta charset="UTF-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>nadjibm.com</title>
+    <title>NadjibM.com</title>
     <!--===== render all elements normally =====-->
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/normalise.css') }}"/>
+    <link rel="stylesheet" href="../static/css/normalise.css"/>
     <!--===== font awesome library =====-->
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/all.min.css') }}"/>
+    <link rel="stylesheet" href="../static/css/all.min.css"/>
     <!--===== main template css file =====-->
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}"/>
+    <link rel="stylesheet" href="../static/css/main.css"/>
     <!--===== google font =====-->
     <link rel="preconnect" href="https://fonts.googleapis.com"/>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
@@ -18,18 +18,18 @@
 </head>
 <body>
     <!--===== start header =====-->
-    <header>
+    <header class="sub-header">
         <div class="container">
             <nav>
-                <a href="{{ url_for('index') }}"><p>Nadjib <span>M</span></p></a>
+                <a href="index.html"><p>Nadjib <span>M</span></p></a>
                 <div class="links" id="navLinks">
                     <i class="fas fa-times" onclick="hideMenu()"></i>
                     <ul>
-                        <li><a href="{{ url_for('index') }}">HOME</a></li>
-                        <li><a href="{{ url_for('about') }}">ABOUT</a></li>
-                        <li><a href="{{ url_for('skills') }}">SKILLS</a></li>
-                        <li><a href="{{ url_for('projects') }}">PROJECTS</a></li>
-                        <li><a href="{{ url_for('contact') }}">CONTACT</a></li>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="skills.html">SKILLS</a></li>
+                        <li><a href="projects.html">PROJECTS</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
                     </ul>
                 </div>
                 <i class="fas fa-bars" onclick="showMenu()"></i>
@@ -40,11 +40,35 @@
     </header>
     <!-- end header -->
 
-    <!-- start skills -->
+    <!-- start skills 1 -->
     <section class="skills">
         <div class="container">
             <h1>My Skills</h1>
-            <p>I'm frontend developer well versed with Html, CSS, Javascript.<br> I'm well conversant with modern frameworks such as React js, bootstrap...</p>
+            <h2>(1)</h2>
+            <p>i have a bachelor degree in Automation engineering well versed with Grafcet , LADDER, step 7.<br>I'm well conversant with modern Technologie.</p>
+            <div class="row">
+                <div class="feat">
+                    <h3>Grafcet</h3>
+                    <p>Grafcet is the abbreviation for: “GRAphe Fonctionnel de Commande Etapes/Transitions.” It means: Step Transition function chart.</p>
+                </div>
+                <div class="feat">
+                    <h3>Ladder</h3>
+                    <p>Ladder logic is a programming language that represents a program by a graphical diagram based on the circuit diagrams of relay logic hardware. used in industrial control applications.</p>
+                </div>
+                <div class="feat">
+                    <h3>Step 7</h3>
+                    <p>STEP 7 Basic can only be used for programming Siemens S7-1200 PLCs but STEP 7 Professional can be used for programming S7-1200, S7-1500, S7-300, and S7-400 PLCs</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end skills 1 -->
+
+    <!-- start skills 2 -->
+    <section class="skills">
+        <div class="container">
+            <h2>(2)</h2>
+            <p>I'm frontend developer well versed with Html, CSS, Javascript.<br> I'm well conversant with modern frameworks such as React js, bootstrap 5...</p>
             <div class="row">
                 <div class="feat">
                     <h3>Html</h3>
@@ -61,7 +85,7 @@
             </div>
         </div>
     </section>
-    <!-- end skills -->
+    <!-- end skills 2 -->
 
     
 
@@ -70,10 +94,9 @@
         <div class="container">
             <h4>About Me</h4>
             <p>Hight level experience in web design and development knowledge, producing quality Work.</p>
-            <a href="https://www.facebook.com/NadjibM/"><i class="fab fa-facebook-f"></i></a>
-            <a href="https://twitter.com/nadjib_m1"></a><i class="fab fa-twitter"></i></a>
-            <a href="https://www.instagram.com/nadjibm_/"></a><i class="fab fa-instagram"></i></a>
-            <a href="https://www.linkedin.com/in/nadjib-mouhoun-1725a7212/"></a><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://twitter.com/nadjib_m1" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/nadjibm_/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/nadjib-mouhoun-1725a7212/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
             <p>made with <i class="far fa-heart"></i> by Nadjib M</p>
         </div>
     </footer>
@@ -83,6 +106,6 @@
 
 
     <!-- main js -->
-    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+    <script src="../static/js/main.js"></script>
 </body>
 </html>
